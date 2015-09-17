@@ -44,7 +44,6 @@ function geoLocation()
        alert(showPosition);
        alert(showError);
           navigator.geolocation.getCurrentPosition(showPosition,showError, { timeout: 3000 });
-          navigator.geolocation.watchPosition(watchGeocodePosition);
      }
      else
           alert("Geolocation is not supported by this browser.");
