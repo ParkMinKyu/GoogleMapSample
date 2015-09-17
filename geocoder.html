@@ -91,6 +91,7 @@ function codeAddress() {
           map: map,
           position: results[0].geometry.location
       });
+      map.setZoom(18);
     } else {
       alert('Geocode was not successful for the following reason: ' + status);
     }
