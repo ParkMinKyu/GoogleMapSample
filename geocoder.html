@@ -38,6 +38,7 @@ function initialize() {
 
 function geoLocation()
 {
+  alert(navigator.geolocation);
      if (navigator.geolocation)
           navigator.geolocation.getCurrentPosition(showPosition,showError);
      else
@@ -46,6 +47,7 @@ function geoLocation()
 //위치 추적 Success
 function showPosition(position)
 {
+  alert(position);
      var latitude = position.coords.latitude;
      var longitude = position.coords.longitude;
      //현재 위치로 지도 이동
