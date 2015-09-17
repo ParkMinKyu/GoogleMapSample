@@ -53,8 +53,8 @@ function showPosition(position)
      //현재 위치로 지도 이동
      var center = new google.maps.LatLng(latitude, longitude);
      var myMarker = new google.maps.Marker({ map : map, position : center });
-     myMap.setCenter(center);
-     myMap.setZoom(18);
+     map.setCenter(center);
+     map.setZoom(18);
 }
 //위치 추적 Faile
 function showError(error)
